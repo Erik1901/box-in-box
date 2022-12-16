@@ -18,7 +18,6 @@ function down() {
     if (top < bordercollision) {
         smallbox.style.top = (top + 10) + 'px';
     }
-
 }
 
 function left() {
