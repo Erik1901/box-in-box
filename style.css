@@ -1,17 +1,39 @@
 body{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container{
-    background: maroon;
+    position: relative;
+    background: black;
     width: 500px;
     height: 500px;
+    outline: 3px red solid;
+    border-radius: 5px;
 }
-.smallbox{
-    position: relative;
-    background: blueviolet;
-    width: 50px;
-    height: 50px;
+#smallbox{
+    position: absolute;
+    background-image: linear-gradient(black, purple,black);
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    border-color: red;
+    font-size: large;
+    color:white;
+    background: black;
+}
+.pointers{
+    display: grid;
+    height: 10rem;
+    width: 10rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap:4px;
+    margin-right: 10px;
 }
